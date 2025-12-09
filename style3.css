@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+:root {
+    --main-color: #0B0E66;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*---------------------------- header------------------------------ */
+.header-wrap {
+    height: 150px;
+    background-color: #3576C6;
+    border: 2px solid #FFFDFD;
+    justify-content: center;
+    align-items: center;
+    gap: 230px;
+}
+
+.header-menu {
+    gap: 43px;
+
+    a {
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: white;
+        white-space: nowrap;
+    }
+}
+
+.header-item:nth-child(3) a {
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.header-btn {
+    width: 197px;
+    height: 49px;
+    border: none;
+    background-color: var(--main-color);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #26C7EA;
+}
+
+/* -------------------footer-------------------------------- */
+.footer-wrap {
+    justify-content: center;
+    gap: 150px;
+    background-color: #3576C6;
+    height: 243px;
+    align-items: center;
+    span{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        color: #26C7EA;
+    }
+}
+
+.footer-text {
+    h4 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        color: #26C7EA;
+        padding-bottom: 20px;
+    }
+    p{
+        font-family: "Inter", sans-serif;
+        font-weight:500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #FFFDFD;
+        padding-bottom: 10px;
+    }
+}
+.footer-social{
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+.footer-contact{
+    h4{
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        color: #26C7EA;
+        padding-bottom: 10px;  
+    }
+
+}
+.footer-adress{
+    align-items: center;
+    gap: 15px;
+    p{
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 100%;
+        color: #FFFDFD;
+    }
+  
+}
