@@ -55,3 +55,31 @@ btn1.addEventListener('click', function () {
     }
 
 })
+// Дискримінант
+function submit(){
+    let a=parseFloat(document.getElementById("a").value);
+    let b=parseFloat(document.getElementById("b").value);
+    let c=parseFloat(document.getElementById("c").value);
+    let result2=document.getElementById("result2");
+    if(isNaN(a)||isNaN(b)||isNaN(c)){
+        result2.textContent="Error";
+        return;
+    }
+    else{
+        let D=b*b-4*a*c;
+        if(D>0){
+        let x1=(-b+Math.sqrt(D))/(2*a);
+        let x2=(-b-Math.sqrt(D))/(2*a);
+        result2.textContent=` Дискримінант ${D}, корені x1=${x1.toFixed(2)}, x2=${x2.toFixed(2)}`;
+
+        }
+        else if(D===0){
+            let x=-b/(2*a);
+            result2.textContent=` Дискримінант ${D}, корінь x=${x.toFixed(2)}`;
+        }
+        else{
+            result2.textContent=` Дискримінант ${D}, дійсних коренів немає`;
+        }
+    }
+}
+
